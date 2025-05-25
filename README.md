@@ -100,23 +100,36 @@ withCredentials: true
 
 ### 🧠 Folder Structure
 ```
-quickchat/
+chat-app/
 │
-├── client/        # React + Vite
+├── client/               # Frontend (React + Vite)
+│   ├── context/
+│   ├── node_modules/
+│   ├── public/
 │   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   └── App.jsx
-│   └── .env
+│   ├── .env
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   ├── vercel.json
+│   └── vite.config.js
 │
-├── server/        # Express API
+├── server/               # Backend (Express + Node)
 │   ├── controllers/
+│   ├── lib/
 │   ├── middlewares/
 │   ├── models/
+│   ├── node_modules/
 │   ├── routes/
-│   └── server.js
-│   └── .env
+│   ├── .env
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+│   └── vercel.json
 │
 └── README.md
 ```
